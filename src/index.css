@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Georgian", ui-sans-serif, system-ui, sans-serif;
+  --font-georgian: "Noto Sans Georgian", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #FAF7F0;
+  --color-forest: #2D5016;
+  --color-forest-dark: #1E380F;
+  --color-wheat: #C9912A;
+  --color-wheat-dark: #A87923;
+  --color-charcoal: #1E1E1E;
+  --color-warmgray: #6B6560;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-georgian {
+  font-family: var(--font-georgian);
+}
